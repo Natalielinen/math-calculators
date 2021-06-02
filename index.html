@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Math calculators</title>
+</head>
+<body>
+    <h1>Математические калькуляторы</h1>
+    <div class="container">
+        <div class="calc" id="quadratic-calc">
+            <h2>Корни квадратного уравнения</h2>
+            <div class="calc_inputs">
+                <label for="coef-a">
+                    a: <input type="number" name="coef-a" id="coef-a">
+                </label>
+                <label for="coef-b">
+                    b: <input type="number" name="coef-b" id="coef-b"> 
+                </label>
+                <label for="coef-c">
+                    c: <input type="number" name="coef-c" id="coef-c">
+                </label>   
+            </div>
+            <div class="btn-container">
+                <button class="ok-btn" id="quadr-btn">ok</button>
+            </div>
+            <div class="answer">
+                <p>
+                    Корней у уравнения: <span id="quadratic-answer">0</span>
+                </p>
+            </div>
+        </div><!--End of quadratic calc-->
+
+        <div class="calc" id="pythagorean-triplet">
+            <h2>Тройка Пифагора</h2>
+            <div class="calc_inputs">
+                <label for="pt-num-a">
+                    a: <input type="number" name="pt-num-a" id="pt-num-a" >
+                </label>
+                <label for="pt-num-b">
+                    b: <input type="number" name="pt-num-b" id="pt-num-b" > 
+                </label>
+                <label for="pt-num-c">
+                    c: <input type="number" name="pt-num-c" id="pt-num-c" >
+                </label>   
+            </div>
+            <div class="btn-container">
+                <button class="ok-btn" id="pt-btn">ok</button>
+            </div>
+            <div class="answer">
+                <p>
+                    Тройка Пифагора: <span id="pt-answer"></span>
+                </p>
+            </div>
+        </div><!--End of pythagorean triplet-->
+
+        <div class="calc" id="divisors-calc">
+            <h2>Делители числа</h2>
+            <div class="calc_inputs">
+                <label for="number">
+                    Число: <input type="number" name="number" id="number" min="1">
+                </label>  
+            </div>
+            <div class="btn-container">
+                <button class="ok-btn" id="div-btn">ok</button>
+            </div>
+            <div class="answer">
+                <p>
+                    Делители числа: <span id="divisors-answer">0</span>
+                </p>
+            </div>
+        </div><!--End of divisors calc-->
+
+        <div class="calc" id="shared-divisors-calc">
+            <h2>Общие делители двух чисел</h2>
+            <div class="calc_inputs">
+                <label for="sd-num-a">
+                    a: <input type="number" name="sd-num-a" id="sd-num-a">
+                </label>
+                <label for="sd-num-b">
+                    b: <input type="number" name="sd-num-b" id="sd-num-b"> 
+                </label>   
+            </div>
+            <div class="btn-container">
+                <button class="ok-btn" id="sd-btn">ok</button>
+            </div>
+            <div class="answer">
+                <p>
+                    Общие делители введеных чисел: <span id="shared-divisors-answer">0</span>
+                </p>
+            </div>
+        </div><!--End of shared-divisors calc-->
+
+        <div class="calc" id="max-shared-divisor-calc">
+            <h2>Наибольший общий делитель</h2>
+            <div class="calc_inputs">
+                <label for="max-sd-num-a">
+                    a: <input type="number" name="max-sd-num-a" id="max-sd-num-a">
+                </label>
+                <label for="max-sd-num-b">
+                    b: <input type="number" name="max-sd-num-b" id="max-sd-num-b"> 
+                </label>   
+            </div>
+            <div class="btn-container">
+                <button class="ok-btn" id="max-sd-btn">ok</button>
+            </div>
+            <div class="answer">
+                <p>
+                    Наибольший общий делитель: <span id="max-shared-divisor-answer">0</span>
+                </p>
+            </div>
+        </div><!--End of max-shared-divisor calc-->
+
+        <div class="calc" id="min-shared-multiple-calc">
+            <h2>Наименьшее общее кратное</h2>
+            <div class="calc_inputs">
+                <label for="min-sd-num-a">
+                    a: <input type="number" name="min-sm-num-a" id="min-sm-num-a">
+                </label>
+                <label for="min-sd-num-b">
+                    b: <input type="number" name="min-sm-num-b" id="min-sm-num-b"> 
+                </label>   
+            </div>
+            <div class="btn-container">
+                <button class="ok-btn" id="min-sm-btn">ok</button>
+            </div>
+            <div class="answer">
+                <p>
+                    Наименьшее общее кратное: <span id="min-shared-multiple-answer">0</span>
+                </p>
+            </div>
+        </div><!--End of min shared multiple calc-->
+      
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
