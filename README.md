@@ -38,5 +38,9 @@
 
 Этот проект является практикой к [этому учебнику](http://code.mu/ru/javascript/book/practice/)
 
+***
+
+посмотреть можно [тут](https://natalielinen.github.io/math-calculators/)
+
 
 
